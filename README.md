@@ -2,164 +2,319 @@
 
 # 🩺 PRESCRIPTO
 
-### Full-Stack Doctor Appointment Booking System
+### Full-Stack Doctor Appointment Booking & Management System
 
-A modern full-stack healthcare appointment management platform that connects patients, doctors, and administrators through a secure and user-friendly web application.
+A modern healthcare platform that enables patients to discover doctors, book appointments, manage their profiles, and provides doctors and administrators with dedicated management dashboards.
 
-<p>
-  <a href="https://prescripto-client-m3fe86doe-shubhamshrivastav1s-projects.vercel.app/">🌐 Live Website</a>
-  &nbsp; • &nbsp;
-  <a href="https://prescripto-admin-nine-gamma.vercel.app/">🎯 Admin Dashboard</a>
-  &nbsp; • &nbsp;
-  <a href="https://prescripto-backend-blond.vercel.app/">⚙️ Backend API</a>
-</p>
+<br />
+
+[![Live Website](https://img.shields.io/badge/🌐_Live_Website-Prescripto-blue?style=for-the-badge)](https://prescripto-client-m3fe86doe-shubhamshrivastav1s-projects.vercel.app/)
+[![Admin Dashboard](https://img.shields.io/badge/🎯_Admin-Dashboard-purple?style=for-the-badge)](https://prescripto-admin-nine-gamma.vercel.app/)
+[![Backend API](https://img.shields.io/badge/⚙️_Backend-API-black?style=for-the-badge)](https://prescripto-backend-blond.vercel.app/)
+
+<br />
+
+![React](https://img.shields.io/badge/React.js-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=flat-square&logo=cloudinary&logoColor=white)
+![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 
 </div>
 
 ---
 
-## 📌 About The Project
+## 📋 Table of Contents
 
-**Prescripto** is a full-stack Doctor Appointment Booking System developed to simplify the process of finding doctors, booking appointments, and managing healthcare-related operations online.
-
-The platform provides dedicated functionality for:
-
-- 👤 **Patients** – Discover doctors and book appointments
-- 🧑‍⚕️ **Doctors** – Manage appointments and professional information
-- 🎯 **Administrators** – Manage doctors, appointments, and platform operations
-
-The project follows a modern client-server architecture using **React.js, Node.js, Express.js, MongoDB, JWT, Cloudinary, and Vercel**.
+- [About The Project](#-about-the-project)
+- [Live Demo](#-live-demo)
+- [Demo Admin Access](#-demo-admin-access)
+- [Features](#-features)
+- [Technology Stack](#️-technology-stack)
+- [System Architecture](#️-system-architecture)
+- [Project Structure](#-project-structure)
+- [Authentication & Security](#-authentication--security)
+- [Database](#️-database)
+- [Cloudinary](#️-cloudinary)
+- [Application Workflow](#-application-workflow)
+- [Getting Started](#-getting-started)
+- [Environment Variables](#-environment-variables)
+- [Production Deployment](#-production-deployment)
+- [Testing](#-testing)
+- [Screenshots](#-screenshots)
+- [Future Improvements](#-future-improvements)
+- [Contributing](#-contributing)
+- [Learning Outcomes](#-learning-outcomes)
+- [Author](#-author)
+- [License](#-license)
 
 ---
 
-## ✨ Key Features
+# 📌 About The Project
 
-### 👤 Patient Features
+**Prescripto** is a full-stack **Doctor Appointment Booking & Management System** designed to make healthcare appointment management simple, organized, and accessible.
 
-- User registration and login
-- JWT-based authentication
-- Browse available doctors
+The platform provides dedicated interfaces for three different types of users:
+
+| User Type | Responsibilities |
+|-----------|------------------|
+| 👤 **Patient** | Find doctors, view profiles, book appointments, and manage appointments |
+| 🧑‍⚕️ **Doctor** | Manage appointments, update professional information, and view earnings |
+| 🎯 **Admin** | Manage doctors, appointments, and overall platform operations |
+
+Prescripto demonstrates a complete full-stack development workflow including:
+
+- Modern React frontend
+- RESTful backend API
+- MongoDB database
+- JWT authentication
+- Password hashing
+- Cloud image storage
+- Role-based application flows
+- Production deployment using Vercel
+
+---
+
+# 🌐 Live Demo
+
+## 👤 Patient / User Website
+
+🔗 **Live Website**
+
+https://prescripto-client-m3fe86doe-shubhamshrivastav1s-projects.vercel.app/
+
+Use the patient application to:
+
+- Register a new account
+- Login
+- Browse doctors
 - Search doctors
 - Filter doctors by speciality
-- View detailed doctor profiles
-- View doctor experience and education
-- View consultation fees
-- View doctor address
+- View doctor details
 - Book appointments
-- View booked appointments
-- Cancel appointments
-- Update profile information
-- Upload profile picture
-
----
-
-### 🧑‍⚕️ Doctor Features
-
-- Doctor authentication
-- Doctor dashboard
 - View appointments
-- Manage appointments
-- View earnings
-- Update doctor profile
-- Manage professional information
-- Manage appointment information
+- Cancel appointments
+- Manage profile
 
 ---
 
-### 🎯 Admin Features
+## 🎯 Admin Dashboard
+
+🔗 **Admin Dashboard**
+
+https://prescripto-admin-nine-gamma.vercel.app/
+
+Admin functionality includes:
 
 - Admin authentication
-- Admin dashboard
-- Add new doctors
-- Upload doctor profile pictures
-- View all doctors
-- Manage doctor profiles
+- Dashboard statistics
+- Add doctors
+- Upload doctor images
+- Manage doctors
 - View appointments
 - Manage appointments
-- View application statistics
-- Manage platform information
 
 ---
 
-## 🛠️ Technology Stack
+## ⚙️ Backend API
 
-### Frontend
+🔗 **Backend API**
 
-| Technology | Purpose |
-|------------|---------|
-| ⚛️ React.js | Frontend UI |
-| ⚡ Vite | Frontend build tool |
-| 🟨 JavaScript | Application logic |
+https://prescripto-backend-blond.vercel.app/
+
+The backend provides the API layer used by both the patient application and admin dashboard.
+
+---
+
+# 🔑 Demo Admin Access
+
+> ⚠️ **Important:** Real production credentials must never be committed to a public GitHub repository.
+
+For testing purposes, use a dedicated demo administrator account configured in the deployment environment.
+
+### 🎯 Admin Login
+
+**Admin URL:**
+
+https://prescripto-admin-nine-gamma.vercel.app/
+
+**Demo Email:**
+
+```text
+YOUR_DEMO_ADMIN_EMAIL
+```
+
+**Demo Password:**
+
+```text
+YOUR_DEMO_ADMIN_PASSWORD
+```
+
+> 💡 For a public portfolio project, create a separate demo admin account rather than publishing your personal or production credentials.
+
+---
+
+# ✨ Features
+
+## 👤 Patient Features
+
+### 🔐 Authentication
+
+- User Registration
+- User Login
+- JWT-based Authentication
+- Protected User Operations
+- Secure Password Hashing
+
+### 🔎 Doctor Discovery
+
+- Browse Doctors
+- Search Doctors
+- Filter by Speciality
+- View Doctor Profile
+- View Doctor Experience
+- View Doctor Education
+- View Consultation Fees
+- View Doctor Address
+- View Doctor Availability
+
+### 📅 Appointment Management
+
+- Select Doctor
+- Select Date
+- Select Time
+- Book Appointment
+- View Booked Appointments
+- Cancel Appointments
+- Manage Existing Appointments
+
+### 👤 Profile Management
+
+- View Profile
+- Update Profile Information
+- Upload Profile Picture
+
+---
+
+# 🧑‍⚕️ Doctor Features
+
+- Doctor Login
+- Doctor Dashboard
+- View Appointments
+- Manage Appointments
+- Update Appointment Status
+- View Earnings
+- Update Doctor Profile
+- Manage Professional Information
+- Manage Availability Information
+
+---
+
+# 🎯 Admin Features
+
+- Admin Login
+- Admin Dashboard
+- Dashboard Statistics
+- Add New Doctors
+- Upload Doctor Profile Picture
+- View All Doctors
+- Manage Doctor Profiles
+- View Appointments
+- Manage Appointments
+- Manage Platform Information
+
+---
+
+# 🛠️ Technology Stack
+
+## 🎨 Frontend
+
+| Technology | Usage |
+|------------|-------|
+| ⚛️ React.js | User Interface |
+| ⚡ Vite | Development & Build Tool |
+| 🟨 JavaScript | Application Logic |
+| 🌐 HTML5 | Page Structure |
 | 🎨 CSS3 | Styling |
-| 🌐 HTML5 | Structure |
-| 🔗 Axios | API communication |
+| 🔗 Axios | API Communication |
 
-### Backend
+---
 
-| Technology | Purpose |
-|------------|---------|
-| 🟢 Node.js | Server-side runtime |
-| 🚀 Express.js | Backend framework |
+## ⚙️ Backend
+
+| Technology | Usage |
+|------------|-------|
+| 🟢 Node.js | Server Runtime |
+| 🚀 Express.js | Backend Framework |
 | 🍃 MongoDB | Database |
 | 📦 Mongoose | MongoDB ODM |
-| 🔐 JWT | Authentication |
-| 🔒 bcrypt | Password hashing |
-| 📤 Multer | File uploads |
-| ☁️ Cloudinary | Image storage |
-| 🌐 CORS | Cross-origin requests |
-| 🔧 dotenv | Environment configuration |
-| ✅ Validator | Input validation |
-
-### Deployment & Services
-
-- ▲ Vercel
-- 🍃 MongoDB Atlas
-- ☁️ Cloudinary
+| 🔐 JSON Web Token | Authentication |
+| 🔒 bcrypt | Password Hashing |
+| 📤 Multer | File Upload Handling |
+| ☁️ Cloudinary | Image Storage |
+| 🌐 CORS | Cross-Origin Requests |
+| 🔧 dotenv | Environment Configuration |
+| ✅ Validator | Input Validation |
 
 ---
 
-## 🏗️ System Architecture
+## ☁️ Deployment & Services
+
+| Service | Purpose |
+|---------|---------|
+| ▲ Vercel | Application Deployment |
+| 🍃 MongoDB Atlas | Cloud Database |
+| ☁️ Cloudinary | Image Storage |
+
+---
+
+# 🏗️ System Architecture
 
 ```text
                          ┌─────────────────────────┐
-                         │       PATIENT           │
-                         │     USER WEBSITE        │
+                         │      PATIENT / USER     │
+                         │       REACT APP         │
                          └────────────┬────────────┘
                                       │
                                       │ REST API
                                       ▼
                          ┌─────────────────────────┐
                          │        BACKEND          │
-                         │    Node.js + Express    │
+                         │    NODE + EXPRESS       │
+                         │       REST API          │
                          └────────────┬────────────┘
                                       │
                          ┌────────────┴────────────┐
                          │                         │
                          ▼                         ▼
-                  ┌───────────────┐        ┌───────────────┐
-                  │    MongoDB    │        │   Cloudinary  │
-                  │    Database   │        │ Image Storage │
-                  └───────────────┘        └───────────────┘
+                ┌──────────────────┐     ┌──────────────────┐
+                │     MongoDB      │     │    Cloudinary    │
+                │     Database     │     │  Image Storage   │
+                └──────────────────┘     └──────────────────┘
                                       ▲
                                       │
                                       │ REST API
                                       │
                          ┌────────────┴────────────┐
-                         │                         │
-                         │        ADMIN            │
-                         │       DASHBOARD         │
+                         │       ADMIN APP         │
+                         │      REACT + VITE       │
                          └─────────────────────────┘
 ```
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
 
 ```text
 prescripto-main/
 │
 ├── backend/
 │   ├── config/
+│   │   ├── cloudinary.js
+│   │   └── mongodb.js
+│   │
 │   ├── controllers/
 │   ├── middlewares/
 │   ├── models/
@@ -171,12 +326,21 @@ prescripto-main/
 ├── clientside/
 │   ├── public/
 │   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── context/
+│   │   ├── pages/
+│   │   └── App.jsx
 │   ├── package.json
 │   └── vite.config.js
 │
 ├── admin/
 │   ├── public/
 │   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   └── App.jsx
 │   ├── package.json
 │   └── vite.config.js
 │
@@ -186,83 +350,185 @@ prescripto-main/
 
 ---
 
-## 🔐 Authentication & Security
+# 🔐 Authentication & Security
 
-Prescripto uses **JSON Web Token (JWT)** based authentication for secure user sessions.
+Prescripto uses **JSON Web Tokens (JWT)** for authentication and protected API operations.
 
-### Authentication
+### Authentication Flow
 
-The application supports separate authentication flows for:
-
-- 👤 Patients
-- 🧑‍⚕️ Doctors
-- 🎯 Administrators
+```text
+             User Login / Registration
+                       │
+                       ▼
+                Backend API
+                       │
+                       ▼
+              Credential Validation
+                       │
+                       ▼
+                 JWT Generated
+                       │
+                       ▼
+               Client Stores Token
+                       │
+                       ▼
+              Protected API Requests
+```
 
 ### Password Security
 
-User passwords are securely hashed using **bcrypt** before being stored in the database.
+Passwords are hashed using **bcrypt** before being stored in the database.
 
-### Environment Variables
+### Protected Operations
 
-Sensitive configuration is managed through environment variables instead of hardcoding credentials in the source code.
+Authentication protects operations such as:
 
-> ⚠️ Never commit `.env` files, database credentials, API secrets, JWT secrets, or admin passwords to GitHub.
-
----
-
-## 🗄️ Database
-
-**MongoDB** is used as the primary database, with **Mongoose** providing schema definitions and database interaction.
-
-The application manages data such as:
-
-- 👤 User accounts
-- 🧑‍⚕️ Doctor profiles
-- 📅 Appointments
-- 🏥 Doctor information
-- 👤 User profile information
-- 📋 Appointment status
-- 💰 Appointment and earnings information
+- User profile management
+- Appointment booking
+- Appointment cancellation
+- Doctor operations
+- Admin operations
 
 ---
 
-## ☁️ Image Management
+# 🗄️ Database
 
-**Cloudinary** is used for cloud-based image storage and management.
+Prescripto uses **MongoDB** as the primary database with **Mongoose** for database interaction.
 
-The application can manage images such as:
+### Main Data
 
-- Doctor profile pictures
+```text
+Users
+ │
+ ├── Authentication
+ ├── Profile Information
+ └── Appointments
+       
+Doctors
+ │
+ ├── Professional Information
+ ├── Speciality
+ ├── Experience
+ ├── Education
+ ├── Fees
+ └── Availability
+
+Appointments
+ │
+ ├── User
+ ├── Doctor
+ ├── Date
+ ├── Time
+ └── Status
+```
+
+---
+
+# ☁️ Cloudinary
+
+**Cloudinary** is integrated for cloud-based image storage and management.
+
+Images can include:
+
 - User profile pictures
+- Doctor profile pictures
 - Application-related images
+
+---
+
+# 🔄 Application Workflow
+
+## 👤 Patient Workflow
+
+```text
+Open Website
+     ↓
+Register / Login
+     ↓
+Browse Doctors
+     ↓
+Search / Filter
+     ↓
+Select Doctor
+     ↓
+View Doctor Profile
+     ↓
+Select Date & Time
+     ↓
+Book Appointment
+     ↓
+View Appointment
+     ↓
+Manage / Cancel Appointment
+```
+
+---
+
+## 🧑‍⚕️ Doctor Workflow
+
+```text
+Doctor Login
+     ↓
+Doctor Dashboard
+     ↓
+View Appointments
+     ↓
+Manage Appointments
+     ↓
+View Earnings
+     ↓
+Update Profile
+```
+
+---
+
+## 🎯 Admin Workflow
+
+```text
+Admin Login
+     ↓
+Admin Dashboard
+     ↓
+View Statistics
+     ↓
+Add Doctor
+     ↓
+Upload Doctor Image
+     ↓
+Manage Doctors
+     ↓
+View Appointments
+     ↓
+Manage Appointments
+```
 
 ---
 
 # 🚀 Getting Started
 
-Follow the steps below to run Prescripto locally.
+Follow these steps to run Prescripto locally.
 
 ---
 
 ## 📋 Prerequisites
 
-Before running the project, make sure you have the following installed:
+Make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/)
 - npm
-- MongoDB / MongoDB Atlas account
-- Cloudinary account
 - Git
+- MongoDB Atlas account
+- Cloudinary account
 
 ---
 
-## 1️⃣ Clone the Repository
+# 1️⃣ Clone the Repository
 
 ```bash
 git clone https://github.com/shubhamshrivastav1/prescripto-main.git
 ```
 
-Navigate into the project:
+Navigate to the project:
 
 ```bash
 cd prescripto-main
@@ -270,9 +536,9 @@ cd prescripto-main
 
 ---
 
-# ⚙️ Backend Setup
+# 2️⃣ Backend Setup
 
-Navigate to the backend directory:
+Navigate to the backend:
 
 ```bash
 cd backend
@@ -284,39 +550,40 @@ Install dependencies:
 npm install
 ```
 
-Create a `.env` file inside the `backend` directory:
+Create a `.env` file inside the `backend` folder.
 
 ```env
 MONGODB_URI=your_mongodb_connection_string
+
 CLOUDINARY_NAME=your_cloudinary_name
 CLOUDINARY_API_KEY=your_cloudinary_api_key
 CLOUDINARY_SECRET_KEY=your_cloudinary_secret_key
+
 JWT_SECRET=your_jwt_secret
+
 ADMIN_EMAIL=your_admin_email
 ADMIN_PASSWORD=your_admin_password
 ```
 
-### Start Backend Server
-
-For production-style start:
+Start the backend:
 
 ```bash
 npm start
 ```
 
-For development using Nodemon:
+For development:
 
 ```bash
 npm run server
 ```
 
-The backend will run on the configured server port.
-
 ---
 
-# 👤 Client / User Website Setup
+# 3️⃣ Client Setup
 
-Open a new terminal and navigate to the project:
+Open a new terminal.
+
+Navigate to the client:
 
 ```bash
 cd prescripto-main/clientside
@@ -334,19 +601,19 @@ Create a `.env` file:
 VITE_BACKEND_URL=http://localhost:4000
 ```
 
-Start the development server:
+Start the client:
 
 ```bash
 npm run dev
 ```
 
-The Vite development server will provide a local URL in the terminal.
-
 ---
 
-# 🎯 Admin Dashboard Setup
+# 4️⃣ Admin Setup
 
-Open another terminal and navigate to:
+Open another terminal.
+
+Navigate to the admin application:
 
 ```bash
 cd prescripto-main/admin
@@ -364,130 +631,136 @@ Create a `.env` file:
 VITE_BACKEND_URL=http://localhost:4000
 ```
 
-Start the admin dashboard:
+Start the admin application:
 
 ```bash
 npm run dev
 ```
 
-The admin dashboard will be available at the local URL shown by Vite.
+---
+
+# 🔑 Environment Variables
+
+## Backend
+
+```env
+MONGODB_URI=your_mongodb_connection_string
+CLOUDINARY_NAME=your_cloudinary_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_SECRET_KEY=your_cloudinary_secret_key
+JWT_SECRET=your_jwt_secret
+ADMIN_EMAIL=your_admin_email
+ADMIN_PASSWORD=your_admin_password
+```
+
+## Client
+
+```env
+VITE_BACKEND_URL=http://localhost:4000
+```
+
+## Admin
+
+```env
+VITE_BACKEND_URL=http://localhost:4000
+```
+
+> ⚠️ Never commit `.env` files to GitHub.
 
 ---
 
-# 🌍 Live Deployment
+# 🌍 Production Deployment
 
-The application is deployed using **Vercel**.
-
-### 👤 Patient / User Website
-
-🌐 [Open Prescripto Website](https://prescripto-client-m3fe86doe-shubhamshrivastav1s-projects.vercel.app/)
-
-### 🎯 Admin Dashboard
-
-🎯 [Open Admin Dashboard](https://prescripto-admin-nine-gamma.vercel.app/)
+Prescripto is deployed using **Vercel**.
 
 ### ⚙️ Backend API
 
-⚙️ [Open Backend API](https://prescripto-backend-blond.vercel.app/)
+https://prescripto-backend-blond.vercel.app/
+
+### 👤 Patient Website
+
+https://prescripto-client-m3fe86doe-shubhamshrivastav1s-projects.vercel.app/
+
+### 🎯 Admin Dashboard
+
+https://prescripto-admin-nine-gamma.vercel.app/
 
 ---
 
-## 🔗 Production Configuration
+# 🔗 Production Backend Configuration
 
-The client and admin applications communicate with the deployed backend using:
+The frontend and admin applications communicate with the deployed backend using:
 
 ```env
 VITE_BACKEND_URL=https://prescripto-backend-blond.vercel.app
 ```
 
-This environment variable should be configured in the respective Vercel projects.
+This variable must be configured in the respective Vercel project environment settings.
 
-> ⚠️ `VITE_` variables are exposed to the frontend. Never store private credentials or secret keys inside a `VITE_` environment variable.
+> ⚠️ `VITE_` variables are exposed to the browser. Only public configuration should be stored in them.
 
 ---
 
-# 🔄 Application Workflow
+# 🛡️ Security Guidelines
 
-## 👤 Patient Workflow
+Never publish sensitive credentials.
+
+### ❌ Do NOT commit
 
 ```text
-Open Website
-      ↓
-Register / Login
-      ↓
-Browse Doctors
-      ↓
-Search / Filter Doctors
-      ↓
-Select Doctor
-      ↓
-View Doctor Profile
-      ↓
-Select Date & Time
-      ↓
-Book Appointment
-      ↓
-View Appointment
-      ↓
-Manage / Cancel Appointment
+.env
+.env.local
+
+MongoDB Password
+MongoDB Connection String
+
+Cloudinary API Secret
+
+JWT Secret
+
+Admin Password
+
+Private API Keys
+
+Access Tokens
+```
+
+### ✅ Use Environment Variables
+
+```text
+Local Development
+       ↓
+      .env
+       ↓
+Environment Variables
+       ↓
+Application
+
+Production
+       ↓
+Vercel Environment Variables
+       ↓
+Application
 ```
 
 ---
 
-## 🧑‍⚕️ Doctor Workflow
+# 🧪 Testing
 
-```text
-Doctor Login
-      ↓
-Doctor Dashboard
-      ↓
-View Appointments
-      ↓
-Manage Appointments
-      ↓
-View Earnings
-      ↓
-Update Profile
-```
-
----
-
-## 🎯 Admin Workflow
-
-```text
-Admin Login
-      ↓
-Admin Dashboard
-      ↓
-Add Doctor
-      ↓
-Upload Doctor Image
-      ↓
-Manage Doctors
-      ↓
-View Appointments
-      ↓
-Manage Appointments
-```
-
----
-
-# 🧪 Testing Checklist
-
-## 👤 Patient / User Testing
+## 👤 Patient Testing
 
 - [ ] User registration works
 - [ ] User login works
-- [ ] Authentication works correctly
+- [ ] Authentication works
 - [ ] Doctors are displayed
 - [ ] Doctor search works
 - [ ] Speciality filtering works
-- [ ] Doctor profile opens correctly
-- [ ] Doctor information is displayed correctly
+- [ ] Doctor profile opens
+- [ ] Doctor details are displayed
 - [ ] Appointment booking works
 - [ ] Appointment list works
 - [ ] Appointment cancellation works
-- [ ] User profile can be updated
+- [ ] Profile update works
 - [ ] Profile image upload works
 
 ---
@@ -495,71 +768,98 @@ Manage Appointments
 ## 🧑‍⚕️ Doctor Testing
 
 - [ ] Doctor login works
-- [ ] Doctor dashboard loads correctly
+- [ ] Doctor dashboard loads
 - [ ] Appointments are displayed
-- [ ] Doctor can manage appointments
+- [ ] Appointment management works
 - [ ] Earnings are displayed
-- [ ] Doctor profile can be updated
-- [ ] Professional information can be managed
+- [ ] Doctor profile update works
+- [ ] Professional information can be updated
 
 ---
 
 ## 🎯 Admin Testing
 
 - [ ] Admin login works
-- [ ] Admin dashboard loads correctly
+- [ ] Admin dashboard loads
+- [ ] Dashboard statistics are displayed
 - [ ] Admin can add doctors
 - [ ] Doctor image upload works
 - [ ] Doctors can be viewed
-- [ ] Doctor profiles can be managed
+- [ ] Doctors can be managed
 - [ ] Appointments can be viewed
 - [ ] Appointments can be managed
-- [ ] Dashboard statistics are displayed
 
 ---
 
 # 📸 Screenshots
 
-Add project screenshots here to showcase the application.
+Add screenshots of your deployed application here.
 
-### 👤 Patient / User Website
+### 👤 Patient Website
 
 ```markdown
-![Patient Website](YOUR_SCREENSHOT_URL)
+![Prescripto Patient Website](./screenshots/patient-home.png)
 ```
 
 ### 🧑‍⚕️ Doctor Dashboard
 
 ```markdown
-![Doctor Dashboard](YOUR_SCREENSHOT_URL)
+![Prescripto Doctor Dashboard](./screenshots/doctor-dashboard.png)
 ```
 
 ### 🎯 Admin Dashboard
 
 ```markdown
-![Admin Dashboard](YOUR_SCREENSHOT_URL)
+![Prescripto Admin Dashboard](./screenshots/admin-dashboard.png)
 ```
-
-> 💡 For a more professional GitHub profile, replace the placeholders above with actual screenshots of your deployed application.
 
 ---
 
-# 📈 Future Improvements
+# 📊 Project Highlights
 
-The following features can be added in future versions:
+| Category | Implementation |
+|----------|----------------|
+| Frontend | React.js + Vite |
+| Backend | Node.js + Express.js |
+| Database | MongoDB |
+| ODM | Mongoose |
+| Authentication | JWT |
+| Password Security | bcrypt |
+| File Upload | Multer |
+| Image Storage | Cloudinary |
+| API Communication | Axios |
+| Deployment | Vercel |
+| Architecture | Full-Stack Client / Server |
+
+---
+
+# 💳 Payment Status
+
+The current project includes payment-related UI elements, but a complete online payment gateway integration is **not currently implemented**.
+
+Possible future integrations:
+
+- 💳 Razorpay
+- 💳 Stripe
+
+---
+
+# 🚧 Future Improvements
+
+Planned improvements for future versions include:
 
 - 💳 Online Payment Integration
 - 📧 Email Notifications
 - 🔔 Appointment Reminders
 - 📅 Advanced Doctor Availability Calendar
 - 🩺 Patient Medical History
-- 📄 Prescription Management
+- 📄 Digital Prescription Management
 - 🎥 Video Consultation
 - 📊 Advanced Admin Analytics
 - 🔎 Advanced Appointment Filtering
 - 📱 Improved Mobile Responsiveness
-- 🔐 Additional Security Enhancements
 - 🌍 Multi-language Support
+- 🔐 Additional Security Improvements
 
 ---
 
@@ -567,24 +867,34 @@ The following features can be added in future versions:
 
 Contributions, suggestions, and improvements are welcome.
 
-### Fork the Repository
+### 1. Fork the Repository
 
-Create your own fork of the project.
+Fork this repository to your GitHub account.
 
-### Create a Feature Branch
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com/shubhamshrivastav1/prescripto-main.git
+```
+
+### 3. Create a Feature Branch
 
 ```bash
 git checkout -b feature/your-feature
 ```
 
-### Commit Your Changes
+### 4. Make Your Changes
+
+Implement and test your changes locally.
+
+### 5. Commit Your Changes
 
 ```bash
 git add .
 git commit -m "Add your feature"
 ```
 
-### Push the Branch
+### 6. Push Your Branch
 
 ```bash
 git push origin feature/your-feature
@@ -603,32 +913,51 @@ This project demonstrates practical experience with:
 - JavaScript
 - Node.js
 - Express.js
+- REST API Development
 - MongoDB
 - Mongoose
-- REST APIs
 - JWT Authentication
 - bcrypt Password Hashing
-- File Uploads
+- Multer File Uploads
 - Cloudinary
+- Axios
 - Role-Based Application Architecture
 - Environment Variables
 - API Integration
-- Full-Stack Web Development
-- Vercel Deployment
+- Full-Stack Development
+- Production Deployment
+- Vercel
 
 ---
 
 # 🔮 Future Vision
 
-Prescripto can be extended into a complete digital healthcare platform by introducing:
+Prescripto can be expanded into a complete digital healthcare ecosystem.
 
-- Secure online payments
+```text
+                         PRESCRIPTO
+                              │
+          ┌───────────────────┼───────────────────┐
+          │                   │                   │
+          ▼                   ▼                   ▼
+       PATIENT             DOCTOR              ADMIN
+          │                   │                   │
+     ┌────┼────┐         ┌────┼────┐        ┌────┼────┐
+     │    │    │         │    │    │        │    │    │
+     ▼    ▼    ▼         ▼    ▼    ▼        ▼    ▼    ▼
+  Booking Profile     Schedule Patients  Doctors Appointments
+  History  Payments   Earnings Prescriptions Analytics Management
+```
+
+Potential future capabilities:
+
 - Digital prescriptions
 - Medical records
-- Doctor availability management
-- Automated notifications
+- Online payments
 - Video consultations
-- Patient history
+- Doctor scheduling
+- Automated notifications
+- Patient medical history
 - Advanced analytics
 - Healthcare reminders
 
@@ -638,8 +967,27 @@ Prescripto can be extended into a complete digital healthcare platform by introd
 
 ## Shubham Shrivastav
 
-GitHub:  
-👉 [github.com/shubhamshrivastav1](https://github.com/shubhamshrivastav1)
+**Full-Stack Developer**
+
+### GitHub
+
+🔗 https://github.com/shubhamshrivastav1
+
+### Project Repository
+
+🔗 https://github.com/shubhamshrivastav1/prescripto-main
+
+---
+
+# ⭐ Support The Project
+
+If you like this project, consider supporting it by:
+
+- ⭐ Giving the repository a Star
+- 🍴 Forking the repository
+- 🐛 Reporting bugs
+- 💡 Suggesting new features
+- 🤝 Contributing to the project
 
 ---
 
@@ -651,12 +999,16 @@ This project is created for **learning, development, and portfolio purposes**.
 
 <div align="center">
 
-## ⭐ PRESCRIPTO
+## 🩺 PRESCRIPTO
 
-### Making Doctor Appointments Simple & Accessible
+### Doctor Appointment Booking & Management System
 
 **Patient Website • Doctor Panel • Admin Dashboard**
 
-If you find this project useful, consider giving it a ⭐ on GitHub.
+Built with ❤️ using **React • Node.js • Express • MongoDB**
+
+<br />
+
+⭐ **If you like this project, don't forget to star the repository!** ⭐
 
 </div>
